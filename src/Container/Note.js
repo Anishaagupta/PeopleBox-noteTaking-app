@@ -1,12 +1,12 @@
 import React, { useState, useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { TextField, Grid, Button } from '@material-ui/core';
-import { someContext } from '../../Context';
+import { someContext } from '../Context';
 import { withRouter } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import './Note.scss';
 import { v4 as uuid } from 'uuid';
-import Header from '../../Components/Header/Header';
+import Header from '../Components/Header';
 
 const useStyles = makeStyles((theme) => ({
   root: {

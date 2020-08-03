@@ -18,10 +18,10 @@ import {
 import AddIcon from '@material-ui/icons/Add';
 import BookIcon from '@material-ui/icons/Book';
 import SearchIcon from '@material-ui/icons/Search';
-import { someContext } from '../../Context';
+import { someContext } from '../Context';
 import { withRouter } from 'react-router-dom';
 
-const drawerWidth = 400;
+const drawerWidth = 300;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
+    marginRight: drawerWidth,
   },
   drawer: {
     width: drawerWidth,
@@ -57,9 +57,7 @@ const useStyles = makeStyles((theme) => ({
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
   content: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3),
+    justifyContent: 'center',
   },
 }));
 
@@ -92,7 +90,7 @@ const PermanentDrawerLeft = ({ history }) => {
         classes={{
           paper: classes.drawerPaper,
         }}
-        anchor='left'
+        anchor='right'
       >
         <div className={classes.mainTextField}>
           <TextField
@@ -138,7 +136,6 @@ const PermanentDrawerLeft = ({ history }) => {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <h1>{showData.title}</h1>
-        <Divider />
         <div style={{ width: '50vw' }}>
           <p>{showData.notes}</p>
         </div>

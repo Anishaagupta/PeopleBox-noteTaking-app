@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-const Home = React.lazy(() => import('../Container/Home'));
-const AddNote = React.lazy(() => import('../Container/AddNotesPage/Note'));
-const NotFound = React.lazy(() => import('../Container/NotFoundPage'));
+const Home = React.lazy(() => import('../Container/Home.js'));
+const AddNote = React.lazy(() => import('../Container/Note'));
+const NotFound = React.lazy(() => import('../Container/NotFound'));
 
 const AppRouter = () => {
   return (
