@@ -17,10 +17,7 @@ import {
 
 import AddIcon from '@material-ui/icons/Add';
 import BookIcon from '@material-ui/icons/Book';
-// import NoteAddIcon from '@material-ui/icons/NoteAdd';
-//import NotesSharpIcon from '@material-ui/icons/NotesSharp';
 import SearchIcon from '@material-ui/icons/Search';
-//import FindInPageSharpIcon from '@material-ui/icons/FindInPageSharp';
 import { someContext } from '../../Context';
 import { withRouter } from 'react-router-dom';
 

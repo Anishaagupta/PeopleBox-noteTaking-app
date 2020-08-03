@@ -6,7 +6,7 @@ export default function Loader(props) {
   return (
     <div className='loader'>
       <div className='loader__figure'></div>
-      {!props.label ? null : <p className='loader__label'>peopleapi</p>}
+      {!props.label ? null : <p className='loader__label'>Note App</p>}
     </div>
   );
 }

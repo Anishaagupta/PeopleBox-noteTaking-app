@@ -4,15 +4,14 @@ import { TextField, Grid, Button } from '@material-ui/core';
 import { someContext } from '../../Context';
 import { withRouter } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import './index.scss';
+import './Note.scss';
 import { v4 as uuid } from 'uuid';
-import Header from '../../Components/Header';
+import Header from '../../Components/Header/Header';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      //width: '25ch',
     },
   },
   inputs: {
